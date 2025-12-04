@@ -14,13 +14,13 @@ spring:
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
 
-  spring:
-    rabbitmq:
-      host: ${RABBIT_HOST:localhost}
-      port: ${RABBIT_PORT:5672}
-      username: ${RABBIT_USERNAME:guest}
-      password: ${RABBIT_PASSWORD:guest}
-      virtual-host: ${RABBIT_VHOST:/}
+
+  rabbitmq:
+    host: ${RABBIT_HOST:localhost}
+    port: ${RABBIT_PORT:5672}
+    username: ${RABBIT_USERNAME:guest}
+    password: ${RABBIT_PASSWORD:guest}
+    virtual-host: ${RABBIT_VHOST:/}
 
 # --- MIRA AQUÍ: "ticket" debe estar pegado a la izquierda, NO dentro de spring ---
 ticket:
